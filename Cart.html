@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | TechZone Electronics</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                TechZone Electronics
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cart.html">Cart</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    
+
+    <div class="container text-center py-5">
+
+        <h1>Shopping Cart</h1>
+
+        <p class="lead">
+            Review the products you've added to your cart.
+        </p>
+
+    </div>
+
+  
+
+    <div class="container mb-5">
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-striped text-center">
+
+                <thead class="table-dark">
+
+                    <tr>
+
+                        <th>Product</th>
+                        <th>Price (KSh)</th>
+                        <th>Quantity</th>
+                        <th>Subtotal (KSh)</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="cartTable">
+
+                    <tr>
+
+                        <td>HP EliteBook Laptop</td>
+
+                        <td>45,000</td>
+
+                        <td>1</td>
+
+                        <td>45,000</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Epson Printer</td>
+
+                        <td>18,500</td>
+
+                        <td>1</td>
+
+                        <td>18,500</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <div class="text-end">
+
+            <h3>
+
+                Total:
+                <span id="cartTotal">
+                    KSh 63,500
+                </span>
+
+            </h3>
+
+        </div>
+
+
+        <div class="mt-4 d-flex justify-content-between">
+
+            <a href="shop.html" class="btn btn-primary">
+
+                Continue Shopping
+
+            </a>
+
+            <div>
+
+                <button
+                    class="btn btn-danger"
+                    id="clearCart">
+
+                    Clear Cart
+
+                </button>
+
+                <button
+                    class="btn btn-success"
+                    id="checkout">
+
+                    Checkout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <h5>TechZone Electronics</h5>
+
+        <p>Nairobi, Kenya</p>
+
+        <p>Email: info@techzoneelectronics.com</p>
+
+        <p>Phone: +254 700 123 456</p>
+
+        <p>&copy; 2026 TechZone Electronics. All Rights Reserved.</p>
+
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
