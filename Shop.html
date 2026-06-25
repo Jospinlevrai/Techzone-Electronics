@@ -2,518 +2,334 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Shop | TechZone Electronics</title>
-
+    <title>Shop - TechZone Electronics</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
+    <!-- Navigation -->
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
 
-<div class="container">
+            <a class="navbar-brand" href="index.html">
+                TechZone Electronics
+            </a>
 
-<a class="navbar-brand fw-bold" href="index.html">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
 
-TechZone Electronics
+                <span class="navbar-toggler-icon"></span>
 
-</a>
+            </button>
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#navbarNav">
+            <div class="collapse navbar-collapse" id="menu">
 
-<span class="navbar-toggler-icon"></span>
+                <ul class="navbar-nav ms-auto">
 
-</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
-<div class="collapse navbar-collapse" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
 
-<ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="services.html">Services</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link active" href="shop.html">Shop</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="gallery.html">Gallery</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
 
-<li class="nav-item">
-<a class="nav-link" href="faq.html">FAQ</a>
-</li>
+                </ul>
 
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
+            </div>
 
-<li class="nav-item">
-<a class="nav-link" href="cart.html">
+        </div>
 
-Cart
+    </nav>
 
-<span id="cart-count" class="badge bg-danger">0</span>
+    <!-- Shop Header -->
 
-</a>
-</li>
+    <div class="container text-center py-5">
 
-</ul>
+        <h1>Our Shop</h1>
 
-</div>
+        <p>Browse our latest electronics and accessories.</p>
 
-</div>
+    </div>
 
-</nav>
+    <!-- Search -->
 
-<!-- ================= HEADER ================= -->
+    <div class="container mb-4">
 
-<section class="bg-primary text-white text-center py-5">
+        <input
+            type="text"
+            id="searchInput"
+            class="form-control"
+            placeholder="Search products...">
 
-<div class="container">
+    </div>
 
-<h1 class="display-4">
+    <!-- Filter Buttons -->
 
-Shop Electronics
+    <div class="container text-center mb-4">
 
-</h1>
+        <button class="btn btn-primary filter-btn" data-category="all">All</button>
 
-<p class="lead">
+        <button class="btn btn-outline-primary filter-btn" data-category="Laptop">Laptops</button>
 
-Find quality electronics at affordable prices.
+        <button class="btn btn-outline-primary filter-btn" data-category="Printer">Printers</button>
 
-</p>
+        <button class="btn btn-outline-primary filter-btn" data-category="Accessory">Accessories</button>
 
-</div>
+    </div>
 
-</section>
+    <!-- Products -->
 
-<!-- SEARCH -->
+    <div class="container">
 
-<div class="container mt-5">
+        <div class="row g-4">
 
-<div class="row">
+            <!-- Product 1 -->
 
-<div class="col-md-6">
+            <div class="col-md-3 product" data-category="Laptop">
 
-<input
+                <div class="card h-100">
 
-type="text"
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Laptop">
 
-id="searchInput"
+                    <div class="card-body text-center">
 
-class="form-control"
+                        <h5>HP EliteBook</h5>
 
-placeholder="Search products...">
+                        <p>KSh 45,000</p>
 
-</div>
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-<div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    </div>
 
-<button class="btn btn-outline-primary">All</button>
+                </div>
 
-<button class="btn btn-outline-primary">Laptops</button>
+            </div>
 
-<button class="btn btn-outline-primary">Printers</button>
+            <!-- Product 2 -->
 
-<button class="btn btn-outline-primary">Accessories</button>
+            <div class="col-md-3 product" data-category="Printer">
 
-</div>
+                <div class="card h-100">
 
-</div>
+                    <img src="images/printer.jpg" class="card-img-top" alt="Printer">
 
-</div>
+                    <div class="card-body text-center">
 
-<!-- PRODUCTS -->
+                        <h5>Epson Printer</h5>
 
-<section class="container py-5">
+                        <p>KSh 18,500</p>
 
-<div class="row g-4">
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-<!-- Product -->
+                    </div>
 
-<div class="col-lg-3 col-md-6">
+                </div>
 
-<div class="card shadow h-100">
+            </div>
 
-<img src="images/laptop.jpg" class="card-img-top">
+            <!-- Product 3 -->
 
-<div class="card-body text-center">
+            <div class="col-md-3 product" data-category="Accessory">
 
-<h5>HP EliteBook</h5>
+                <div class="card h-100">
 
-<p>Intel Core i5 • 8GB RAM</p>
+                    <img src="images/router.jpg" class="card-img-top" alt="Router">
 
-<h4 class="text-primary">
+                    <div class="card-body text-center">
 
-KSh 45,000
+                        <h5>Wi-Fi Router</h5>
 
-</h4>
+                        <p>KSh 5,800</p>
 
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-View Details
+                    </div>
 
-</a>
+                </div>
 
-<button class="btn btn-success w-100">
+            </div>
 
-Add to Cart
+            <!-- Product 4 -->
 
-</button>
+            <div class="col-md-3 product" data-category="Accessory">
 
-</div>
+                <div class="card h-100">
 
-</div>
+                    <img src="images/mouse.jpg" class="card-img-top" alt="Mouse">
 
-</div>
+                    <div class="card-body text-center">
 
-<!-- Product -->
+                        <h5>Wireless Mouse</h5>
 
-<div class="col-lg-3 col-md-6">
+                        <p>KSh 1,500</p>
 
-<div class="card shadow h-100">
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-<img src="images/printer.jpg" class="card-img-top">
+                    </div>
 
-<div class="card-body text-center">
+                </div>
 
-<h5>Epson Printer</h5>
+            </div>
 
-<p>EcoTank L3250</p>
+            <!-- Product 5 -->
 
-<h4 class="text-primary">
+            <div class="col-md-3 product" data-category="Accessory">
 
-KSh 18,500
+                <div class="card h-100">
 
-</h4>
+                    <img src="images/keyboard.jpg" class="card-img-top" alt="Keyboard">
 
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
+                    <div class="card-body text-center">
 
-View Details
+                        <h5>Keyboard</h5>
 
-</a>
+                        <p>KSh 2,500</p>
 
-<button class="btn btn-success w-100">
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-Add to Cart
+                    </div>
 
-</button>
+                </div>
 
-</div>
+            </div>
 
-</div>
+            <!-- Product 6 -->
 
-</div>
+            <div class="col-md-3 product" data-category="Accessory">
 
-<!-- Product -->
+                <div class="card h-100">
 
-<div class="col-lg-3 col-md-6">
+                    <img src="images/headset.jpg" class="card-img-top" alt="Headset">
 
-<div class="card shadow h-100">
+                    <div class="card-body text-center">
 
-<img src="images/router.jpg" class="card-img-top">
+                        <h5>Headset</h5>
 
-<div class="card-body text-center">
+                        <p>KSh 3,800</p>
 
-<h5>TP-Link Router</h5>
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-<p>Dual Band Wi-Fi</p>
+                    </div>
 
-<h4 class="text-primary">
+                </div>
 
-KSh 5,800
+            </div>
 
-</h4>
+            <!-- Product 7 -->
 
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
+            <div class="col-md-3 product" data-category="Accessory">
 
-View Details
+                <div class="card h-100">
 
-</a>
+                    <img src="images/webcam.jpg" class="card-img-top" alt="Webcam">
 
-<button class="btn btn-success w-100">
+                    <div class="card-body text-center">
 
-Add to Cart
+                        <h5>HD Webcam</h5>
 
-</button>
+                        <p>KSh 4,000</p>
 
-</div>
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-<!-- Product -->
+            </div>
 
-<div class="col-lg-3 col-md-6">
+            <!-- Product 8 -->
 
-<div class="card shadow h-100">
+            <div class="col-md-3 product" data-category="Accessory">
 
-<img src="images/headset.jpg" class="card-img-top">
+                <div class="card h-100">
 
-<div class="card-body text-center">
+                    <img src="images/usb.jpg" class="card-img-top" alt="USB Drive">
 
-<h5>Wireless Headset</h5>
+                    <div class="card-body text-center">
 
-<p>Bluetooth 5.2</p>
+                        <h5>64GB USB Drive</h5>
 
-<h4 class="text-primary">
+                        <p>KSh 1,200</p>
 
-KSh 4,900
+                        <button class="btn btn-success add-cart">
+                            Add to Cart
+                        </button>
 
-</h4>
+                    </div>
 
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
+                </div>
 
-View Details
+            </div>
 
-</a>
+        </div>
 
-<button class="btn btn-success w-100">
+    </div>
 
-Add to Cart
+    <!-- Footer -->
 
-</button>
+    <footer class="bg-dark text-white text-center mt-5 p-4">
 
-</div>
+        <h5>TechZone Electronics</h5>
 
-</div>
+        <p>Nairobi, Kenya</p>
 
-</div>
+        <p>Email: info@techzoneelectronics.com</p>
 
-<!-- Product -->
+        <p>Phone: +254 700 123 456</p>
 
-<div class="col-lg-3 col-md-6">
+        <p>&copy; 2026 TechZone Electronics</p>
 
-<div class="card shadow h-100">
+    </footer>
 
-<img src="images/mouse.jpg" class="card-img-top">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="card-body text-center">
-
-<h5>Wireless Mouse</h5>
-
-<p>Logitech M185</p>
-
-<h4 class="text-primary">
-
-KSh 1,500
-
-</h4>
-
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
-
-View Details
-
-</a>
-
-<button class="btn btn-success w-100">
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow h-100">
-
-<img src="images/keyboard.jpg" class="card-img-top">
-
-<div class="card-body text-center">
-
-<h5>Gaming Keyboard</h5>
-
-<p>RGB Mechanical</p>
-
-<h4 class="text-primary">
-
-KSh 3,200
-
-</h4>
-
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
-
-View Details
-
-</a>
-
-<button class="btn btn-success w-100">
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow h-100">
-
-<img src="images/ssd.jpg" class="card-img-top">
-
-<div class="card-body text-center">
-
-<h5>Samsung SSD</h5>
-
-<p>1TB NVMe</p>
-
-<h4 class="text-primary">
-
-KSh 12,000
-
-</h4>
-
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
-
-View Details
-
-</a>
-
-<button class="btn btn-success w-100">
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product -->
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow h-100">
-
-<img src="images/webcam.jpg" class="card-img-top">
-
-<div class="card-body text-center">
-
-<h5>HD Webcam</h5>
-
-<p>1080P USB Camera</p>
-
-<h4 class="text-primary">
-
-KSh 3,900
-
-</h4>
-
-<a href="product-details.html"
-class="btn btn-primary w-100 mb-2">
-
-View Details
-
-</a>
-
-<button class="btn btn-success w-100">
-
-Add to Cart
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer class="bg-dark text-white text-center py-4">
-
-<h4>
-
-TechZone Electronics
-
-</h4>
-
-<p>
-
-Nairobi, Kenya
-
-</p>
-
-<p>
-
-info@techzoneelectronics.com
-
-</p>
-
-<p>
-
-+254 700 123 456
-
-</p>
-
-<hr>
-
-<p>
-
-© 2026 TechZone Electronics. All Rights Reserved.
-
-</p>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="js/search.js"></script>
-
-<script src="js/filter.js"></script>
-
-<script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
