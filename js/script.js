@@ -5,7 +5,7 @@ if (searchInput) {
 
         const filter = searchInput.value.toLowerCase();
 
-        const products = document.querySelectorAll(".col-md-3.product");
+        const products = document.querySelectorAll(".product");
 
         products.forEach(function (product) {
 
@@ -21,3 +21,26 @@ if (searchInput) {
 
     });
 }
+
+// Product filtering 
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+filterButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+
+    const category = this.getAttribute("data-category");
+
+    const products = document.querySelectorAll(".product");
+
+    products.forEach(function (product) {
+
+        if (category === "all") {
+            product.style.display = "block";
+        } else if(product.getAttribute("data-category") === category) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+});
+});
