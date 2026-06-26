@@ -44,3 +44,22 @@ filterButtons.forEach(function (button) {
     });
 });
 });
+
+
+
+//shopping cart functionality
+
+let cartcount = 0;
+const cartCount = document.getElementById("cartCount");
+
+const addToCartButtons = document.querySelectorAll(".add-cart");
+
+addToCartButtons.forEach(function (button) { 
+    button.addEventListener("click", function () {
+        cartcount++;
+        if (cartCount) {
+            cartCount.innerHTML = cartcount;
+        }
+        alert("Item added to cart! Total items in cart: " + cartcount);
+    });
+});
