@@ -48,18 +48,50 @@ filterButtons.forEach(function (button) {
 
 
 //shopping cart functionality
+let cartCount = 0;
 
-let cartcount = 0;
-const cartCount = document.getElementById("cartCount");
+const cartCounter = document.getElementById("cartCount");
 
-const addToCartButtons = document.querySelectorAll(".add-cart");
+const addButtons = document.querySelectorAll(".add-cart");
 
-addToCartButtons.forEach(function (button) { 
-    button.addEventListener("click", function () {
-        cartcount++;
-        if (cartCount) {
-            cartCount.innerHTML = cartcount;
+addButtons.forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+        cartCount++;
+
+        if(cartCounter){
+
+            cartCounter.innerHTML = cartCount;
+
         }
-        alert("Item added to cart! Total items in cart: " + cartcount);
+
+        alert("Product added to cart!");
+
     });
+
 });
+
+
+//improvement Coming soon 
+
+
+
+//clear cart   
+
+const clearCart = document.getElementById("clearCart");
+
+if (clearCart) {
+    clearCart.addEventListener("click", function () {
+        let answer = confirm("Are you sure you want to clear the cart?");
+        if (answer) {
+            document.getElementById("cartTable").innerHTML ="";
+            document.getElementById("cartTotal").innerHTML = "Ksh 0.00";
+
+            if (cartCount) {
+                cartCount.innerHTML = "0";
+            }
+            alert("Cart cleared!");
+        }
+    });
+}
