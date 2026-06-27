@@ -103,68 +103,75 @@
 
                 <h3>Send a Message</h3>
 
-                <form id="contactForm">
+<form id="contactForm">
 
-                    <div class="mb-3">
+    <div class="mb-3">
 
-                        <label class="form-label">Full Name</label>
+        <label class="form-label">Full Name</label>
 
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="Enter your full name"
-                            required>
+        <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your full name">
 
-                    </div>
+        <span id="nameError" class="text-danger"></span>
 
-                    <div class="mb-3">
+    </div>
 
-                        <label class="form-label">Email Address</label>
+    <div class="mb-3">
 
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Enter your email"
-                            required>
+        <label class="form-label">Email Address</label>
 
-                    </div>
+        <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email">
 
-                    <div class="mb-3">
+        <span id="emailError" class="text-danger"></span>
 
-                        <label class="form-label">Phone Number</label>
+    </div>
 
-                        <input
-                            type="tel"
-                            class="form-control"
-                            id="phone"
-                            placeholder="Enter your phone number">
+    <div class="mb-3">
 
-                    </div>
+        <label class="form-label">Phone Number</label>
 
-                    <div class="mb-3">
+        <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number">
 
-                        <label class="form-label">Message</label>
+        <span id="phoneError" class="text-danger"></span>
 
-                        <textarea
-                            class="form-control"
-                            id="message"
-                            rows="5"
-                            placeholder="Write your message here..."
-                            required></textarea>
+    </div>
 
-                    </div>
+    <div class="mb-3">
 
-                    <button type="submit" class="btn btn-primary">
-                        Send Message
-                    </button>
+        <label class="form-label">Message</label>
 
-                    <button type="reset" class="btn btn-secondary">
-                        Clear
-                    </button>
+        <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Write your message here..."></textarea>
 
-                </form>
+        <span id="messageError" class="text-danger"></span>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Send Message
+    </button>
+
+    <button type="reset" class="btn btn-secondary">
+        Clear
+    </button>
+
+            </form>
+
+
 
             </div>
 
@@ -198,7 +205,7 @@
                         <h5>Phone</h5>
 
                         <p>
-                            +254 700 123 456
+                            +254 795445238
                         </p>
 
                         <hr>
@@ -208,7 +215,10 @@
                         <p>
 
                             Monday - Friday<br>
-                            8:00 AM - 6:00 PM
+                            8:00 AM - 6:00 PM<br>
+                            Saturday<br>
+                            9:00 AM - 4:00 PM<br>
+                            Sunday - Closed 
 
                         </p>
 
