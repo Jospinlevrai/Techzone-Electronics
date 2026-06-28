@@ -252,3 +252,75 @@ footer p{
         font-size: 14px;
     }
 }
+
+/* ==========================
+   Dark Mode
+========================== */
+
+body.dark-mode{
+    background-color:#121212;
+    color:white;
+}
+
+body.dark-mode .hero{
+    background:#1b1b1b;
+}
+
+body.dark-mode .container{
+    color:white;
+}
+
+body.dark-mode .card{
+    background:#222;
+    color:white;
+}
+
+body.dark-mode .card h5,
+body.dark-mode .card p,
+body.dark-mode .card h4{
+    color:white;
+}
+
+body.dark-mode .bg-light{
+    background:#1b1b1b !important;
+}
+
+body.dark-mode footer{
+    background:#000 !important;
+}
+
+body.dark-mode .navbar{
+    background:#000 !important;
+}
+
+body.dark-mode input,
+body.dark-mode textarea{
+    background:#333;
+    color:white;
+    border:1px solid #555;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder{
+    color:#ccc;
+}
+
+body.dark-mode .form-control{
+    background:#333;
+    color:white;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode label{
+    color:white;
+}
+
+body.dark-mode a{
+    color:white;
+}

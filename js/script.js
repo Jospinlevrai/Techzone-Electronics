@@ -228,8 +228,9 @@ function ContactValidation(contactForm) {
     });
 
 }
-
-ContactValidation("contactForm");
+if (document.getElementById("contactForm")) {
+    ContactValidation("contactForm");
+}
 
 
 const images = document.querySelectorAll(".card img");
@@ -251,4 +252,29 @@ images.forEach(function(image){
     });
 
 });
+
+// Dark Mode
+
+
+const darkModeBtn = document.getElementById("darkModeBtn");
+
+if (darkModeBtn) {
+
+    darkModeBtn.addEventListener("click", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+
+            darkModeBtn.innerHTML = " Light Mode";
+
+        } else {
+
+            darkModeBtn.innerHTML = "Dark Mode";
+
+        }
+
+    });
+
+}
 
